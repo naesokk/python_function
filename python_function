@@ -7,3 +7,50 @@ happy_birthday()
 happy_birthday()
 happy_birthday()
 ## --> 
+# Trong trường hợp muốn thay tên cụ thể , ta có thể thêm kí tự và thêm string "f" , kèm theo đấy là ngoặc điều kiện ( BẮT BUỘC PHẢI CÓ f string )
+
+	def happy_birthday(name):  
+	    print(f"happy birthday to {name}")  
+	    print("this is your special day!")  
+	    print("always smiles ^^")  
+	  
+	happy_birthday("Bro")
+
+
+# Và chúng ta có thể áp dụng với nhiều tên ( thêm print() để giãn dòng ) : 
+
+	def happy_birthday(name):  
+	    print(f"happy birthday to {name}")  
+	    print("this is your special day!")  
+	    print("always smiles ^^")  
+	    print()  
+	happy_birthday("Bro")  
+	happy_birthday("Giang")  
+	happy_birthday("Purisy")
+
+# Tên + tuổi ( Để ý f string và thêm data , không được thay đổi thứ tự : )
+
+	     def happy_birthday(name,age):  
+		    print(f"happy birthday to {name}")  
+		    print(f"you are {age} years old!")  
+		    print("always smiles haha")  
+		    print()    
+		happy_birthday("Giang",19)  
+		happy_birthday("Han",18)  
+		happy_birthday("Mom",52)
+
+# Tùy theo cách chúng ta chọn , ta có thể đổi sang x và y chứ không nhất thiết phải là name với age
+
+#Example 1 : Hóa đơn 
+def display_invoice(username, amount, due_date):
+    print(f"Hello {username}")
+    print(f"Hóa đơn của bạn là VNĐ: {amount:.3f} có hạn đến: {due_date}")
+display_invoice("Giang Nguyenx", 525.500,"17/12")
+
+#Example 2 : Nộp BTVN 
+def display_homework(username, quantity, hour_date , due_date):
+    print(f" Alo dcm {username}")
+    print(f"Your point after English homework is {quantity:.2f}")
+    print(f"Time submit : At {hour_date}")
+    print(f"Day submit : At {due_date}")
+display_homework("Giang Nguyenx",8.75,"8.15pm" ,"17/12")
